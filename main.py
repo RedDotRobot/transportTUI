@@ -1,5 +1,5 @@
 # Packages
-# Textualize package
+# Textualize packages
 from textual.app import App, ComposeResult
 from textual.widgets import Header, Footer, Static, TabbedContent, TabPane, Select, Digits, Input, Button, LoadingIndicator
 from rich.pretty import Pretty
@@ -41,8 +41,8 @@ def getGTFS(url: str, params: dict, headers: dict) -> str:
     feed.ParseFromString(response.content)
     feedDict: dict = MessageToDict(feed, preserving_proto_field_name=True)
 
-    with open(f"responses/{time.time()}.json", "x") as f:
-        json.dump(feedDict, f, indent=2)
+#    with open(f"responses/{time.time()}.json", "x") as f:
+#        json.dump(feedDict, f, indent=2)
 
     return feed
 
@@ -76,7 +76,7 @@ class Alert(Static):
         data = getGTFS(url, params, headers)
         alerts = ["formatting this later because i'm lazy asf"]
 
-        for entity in data.entity:              # trust this works lmao
+        for entity in  data.entity:              # trust this works lmao
             if entity.HasField("alert"):
                 alert = entity.alert
                 # alerts.append(alert)
@@ -88,7 +88,7 @@ class Trips(Static):
     def on_mount(self) -> None:
 
         url = "https://api.transport.nsw.gov.au/v2/gtfs/realtime/sydneytrains"
-        # tripData = getGTFS(url, "", headers)
+        tripData = getGTFS(url, "", headers)
 
         trips: list = []
 
