@@ -1,0 +1,54 @@
+#sidebar {
+  dock: left;
+  width: 27;
+  margin-right: 1;
+}
+
+Header {
+  dock: top;
+  height: 1;
+  background: grey 0%;
+}
+
+Select {
+  border: ansi_blue round;
+  padding: 1;
+}
+
+Button {
+  background: black 0%;
+  border: ansi_blue round;
+  height: 5 ;
+}
+
+Clock {
+  border: ansi_green round;
+}
+
+Alert {
+  border: ansi_red round;
+}
+
+Trips {
+  border: ansi_blue round;
+}
+
+.weather {
+  border: ansi_cyan round
+}
+
+.main {
+  margin-top:1 ;
+}
+
+.border {
+  border: ansi_blue round;
+}
+
+.bold {
+  text-style: bold
+}
+
+.italic {
+  text-style: italic
+}

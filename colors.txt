@@ -1,0 +1,17 @@
+background            #f4f4f4
+foreground            #3e3e3e
+cursor                #3f3f3f
+selection_background  #a9c1e2
+dark black                #3e3e3e
+light black                #666666
+yellow                #f7edc7
+yello               #f0cf06
+blue                #003e8a
+blu               #2e6cba
+purple                #e94691
+pupr               #ffa29f
+cyan                #89d1ec
+cyan+               #1cfafe
+light gray                #ffffff
+basically white lwlwlwlw               #ffffff
+selection_foreground #f4f4f4

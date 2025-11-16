@@ -1,0 +1,8 @@
+/include
+/bin
+/lib
+/__pycache__
+/responses
+/lib64
+pyvenv.cfg
+.env
